@@ -1,0 +1,176 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+  border: 2px solid var(--colorBgContainer);
+  padding: 8px 12px;
+  border-radius: 4px;
+  box-shadow: 0 5px 14px 0 #0000000D;
+  transition: background-color 0.2s;
+
+  &.primary {
+    background-color: var(--colorButton);
+    color: var(--colorLightText);
+
+
+    &:hover {
+      background-color: var(--colorButtonPressed);
+    }
+
+    &.active {
+      background-color: var(--colorButtonPressed);
+    }
+
+    &.disabled {
+      background-color: var(--colorBgLayout);
+      color: var(--colorDisabledText);
+      border-color: var(--colorDivaider);
+    }
+
+    &.error {
+      background-color: var(--colorShildRed);
+    }
+
+  }
+
+
+  &.secondary {
+    background-color: var(--colorBgContainer);
+    color: var(--colorPrimaryText);
+    transition: color 0.2s;
+    border: none;
+
+
+    &:hover {
+      background-color: var(--colorButtonSecPressed);
+      color: var(--colorLightText);
+    }
+
+    &.active {
+      background-color: var(--colorButtonPressed);
+    }
+
+    &:disabled {
+      background-color: var(--colorBgLayout);
+      color: var(--colorDisabledText);
+      border-color: var(--colorDivaider);
+    }
+
+    &.error {
+      border: 2px solid var(--colorShildRed);
+      color: var(--colorShildRed);;
+    }
+
+  }
+
+  &.link {
+    background-color: transparent;
+    color: var(--colorButton);
+    box-shadow: none;
+    border: none;
+
+    &:hover {
+      color: var(--colorButtonPressed);
+    }
+
+    &.active {
+      color: var(--colorButtonPressed);
+    }
+
+    &.disabled {
+      color: var(--colorDisabledText);
+    }
+
+    &.error {
+      color: var(--colorShildRed);
+    }
+
+
+  }
+
+  &.icon {
+    background-color: var(--colorButton);
+    color: var(--colorLightText);
+    border: 2px solid var(--colorBgContainer);
+    padding: 11px 12px;
+
+    &:hover {
+      background-color: var(--colorButtonPressed);
+    }
+
+    &.active {
+      background-color: var(--colorButtonPressed);
+    }
+
+    &.disabled {
+      color: var(--colorDisabledText);
+      background-color: var(--colorBgLayout);
+      border-color: var(--colorDivaider);
+    }
+
+    &.error {
+      background-color: var(--colorShildRed);
+    }
+  }
+
+  &.iconOutline {
+    background-color: transparent;
+    color: var(--colorButton);
+    border: 2px solid var(--colorButton);
+    padding: 11px 12px;
+
+    &:hover {
+      color: var(--colorButtonPressed);
+      border: 2px solid var(--colorButtonPressed);
+    }
+
+    &.active {
+      color: var(--colorButtonPressed);
+      border: 2px solid var(--colorButtonPressed);
+    }
+
+    &.disabled {
+      color: var(--colorDisabledText);
+      border-color: var(--colorDivaider);
+    }
+
+    &.error {
+      border: 2px solid var(--colorShildRed);
+      color: var(--colorShildRed);
+    }
+  }
+
+
+  &.small {
+    padding: 6px 12px;
+  }
+
+
+  &.medium {
+  }
+
+
+  &.large {
+    padding: 10px 20px;
+  }
+
+
+  &.disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+}
+
+
+.icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+
+
+

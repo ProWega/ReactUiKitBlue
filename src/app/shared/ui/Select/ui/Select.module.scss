@@ -1,0 +1,156 @@
+.selectContainer {
+  position: relative;
+  width: 100%;
+  font-family: sans-serif;
+  font-size: 14px;
+}
+
+
+.selectControl {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 4px;
+  min-height: 40px;
+  padding: 4px 8px;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background: var(--colorLightText);
+  cursor: pointer;
+
+  &:focus-within {
+    border-color: var(--colorButton);
+    box-shadow: 0 0 0 2px var(--colorButton);
+  }
+}
+
+
+.selectPlaceholder {
+  color: var(--colorDivaider);
+}
+
+
+.selectValue {
+  flex: 1;
+}
+
+
+.selectTags {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  flex: 1;
+  flex-wrap: wrap;
+}
+
+
+.selectTag {
+  display: inline-flex;
+  align-items: center;
+  background: var(--colorBgContainer);
+  color: var(--colorButtonPressed);
+  padding: 2px 6px;
+  border-radius: 2px;
+  font-size: 13px;
+}
+
+
+.tagRemove {
+  background: transparent;
+  border: none;
+  margin-left: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  line-height: 1;
+}
+
+
+.selectClearBtn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  color: var(--colorDivaider);
+  margin-left: 4px;
+  padding: 0;
+
+
+  &:hover {
+    color: #333;
+  }
+}
+
+
+.selectArrow {
+  align-items: center;
+  margin-left: auto;
+  transition: transform 0.2s ease;
+}
+
+.arrow {
+  align-self: center;
+}
+
+.open {
+  transform: rotate(180deg);
+}
+
+
+.selectDropdown {
+  position: absolute;
+  top: calc(100% + 4px);
+  left: 0;
+  right: 0;
+  max-height: 200px;
+  overflow-y: auto;
+  background: var(--colorLightText);
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  z-index: 10;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+.selectInput {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-bottom: 2px solid var(--colorInputPressed);
+  outline: none;
+  box-sizing: border-box;
+}
+
+
+.selectLoading,
+.selectEmpty {
+  padding: 8px;
+  color: var(--colorDivaider);
+  text-align: center;
+}
+
+
+.selectOption {
+  padding: 8px;
+  cursor: pointer;
+
+
+  &:hover {
+    background: var(--colorDivaider);
+  }
+}
+
+
+.selected {
+  background: var(--colorButton);
+  color: var(--colorLightText);
+}
+
+
+.disabled {
+  color: var(--colorDivaider);
+  cursor: not-allowed;
+}
+
+
+
+

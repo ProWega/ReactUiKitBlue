@@ -1,0 +1,85 @@
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 296px;
+  height: 38px;
+
+  .label {
+    padding-left: 12px;
+  }
+
+  .inputWrap {
+    display: flex;
+    flex-direction: row;
+    //width: 296px;
+    height: 38px;
+    outline: 2px solid var(--colorDivaider);
+    color: var(--colorDisabledText);
+    padding: 8px 12px;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+    .addonLeft {
+      display: flex;
+      align-items: center;
+      align-self: center;
+      border-right: 2px solid var(--colorDivaider);
+      padding-right: 8px;
+      height: 38px;
+    }
+
+    .inputIcon {
+      align-self: center;
+    }
+
+    .inputBox {
+      display: flex;
+      flex-direction: row;
+      //border: 2px solid var(--colorDivaider);
+      height: 38px;
+      align-self: center;
+      //margin: 0 12px;
+      //border-top: none;
+      //border-bottom: none;
+
+      .inputElement {
+        border: none;
+        //padding-left: 8px;
+
+        &:focus {
+          border: none;
+          outline: none;
+
+        }
+      }
+    }
+
+    .clearButton {
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0 12px 12px 12px;
+
+      .clearIcon {
+        width: 8px;
+        height: 8px;
+      }
+    }
+
+    .addonRight {
+      display: flex;
+      align-items: center;
+      align-self: center;
+      border-left: 2px solid var(--colorDivaider);
+      height: 38px;
+      padding-left: 8px;
+    }
+  }
+
+  .helper {
+    padding-left: 12px;
+  }
+
+}
+

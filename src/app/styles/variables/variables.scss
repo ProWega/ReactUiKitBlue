@@ -1,0 +1,76 @@
+:root {
+  //background
+  --colorBgLayout: #F2F8FC;
+  --colorBgContainer: #FFFFFF;
+  --colorBgAccent: #3182CE;
+  --colorBgSecondary: #FAFDFF;
+
+  //text
+  --colorText: #718096;
+  --colorDisabledText: #A0AEC0;
+  --colorPrimaryText: #2D3748;
+  --colorLightText: #FFFFFF;
+
+  //button
+  --colorButton: #3182CE;
+  --colorButtonPressed: #195B98;
+  --colorButtonSec: #FFFFFF;
+  --colorButtonSecPressed: #77BDFF;
+
+  //shild
+  --colorShildGreen: #48BB78;
+  --colorShildRed: #FE5062;
+  --colorButtonSecOrange: #ED8936;
+  --colorShildYallow: #E3CB4F;
+  --colorButtonSecPink: #FF7482;
+
+  //divider
+  --colorDivaider: #BEC7D3;
+
+  //info
+  --colorInfoActive: #3182CE;
+
+  //paranja
+  --colorParanja: rgba(#1A222E, 0.4);
+
+  //tooltip
+  --colorTooltip: rgba(#2D3748, 80%);
+};
+:root[data-theme="dark"] {
+  //background
+  --colorBgLayout: #1B254B;
+  --colorBgContainer: #111C44;
+  --colorBgAccent: #0B1437;
+  --colorBgSecondary: #0E183D;
+
+  //text
+  --colorText: #A0AEC0;
+  --colorDisabledText: #A0AEC0;
+  --colorPrimaryText: #FFFFFF;
+  --colorLightText: #FFFFFF;
+
+  //button
+  --colorButton: #111C44;
+  --colorButtonPressed: #77BDFF;
+  --colorButtonSec: #4FAAFF;
+  --colorButtonSecPressed: #195B98;
+
+  //shild
+  --colorShildGreen: #48BB78;
+  --colorShildRed: #FF8894;
+  --colorButtonSecOrange: #F4974A;
+  --colorShildYallow: #E3CB4F;
+  --colorButtonSecPink: #FF7482;
+
+  //divider
+  --colorDivaider: #E0E1E2;
+
+  //info
+  --colorInfoActive: #3182CE;
+
+  //paranja
+  --colorParanja: rgba(#1A222E, 40%);
+
+  //tooltip
+  --colorTooltip: rgba(#4C6B9F, 80%);
+}

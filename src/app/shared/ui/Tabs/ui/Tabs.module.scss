@@ -1,0 +1,12 @@
+.tabs {
+  display: flex;
+  gap: 8px;
+  width: auto;
+  background-color: var(--colorBgLayout);
+}
+
+.tabsContainer {
+  display: inline-block;
+  padding: 16px 28px;
+  border: 1px dashed black;
+}

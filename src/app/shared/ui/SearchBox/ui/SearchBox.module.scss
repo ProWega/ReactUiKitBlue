@@ -1,0 +1,48 @@
+.searchBox {
+  display: flex;
+  justify-content:  space-around;
+  width: 264px;
+  height: 38px;
+  outline: 2px solid var(--colorDivaider);
+  border-radius: 4px;
+  box-sizing: border-box;
+
+  .input {
+    border: none;
+    padding-left: 8px;
+    &:focus {
+      border: none;
+      outline: none;
+    }
+  }
+}
+.inputContainer {
+  width: 230px;
+  outline: none;
+  border: none;
+  padding: 4px 12px;
+  box-sizing: border-box;
+}
+
+.clearButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 12px 12px 12px;
+}
+
+.clearIcon {
+  width: 8px;
+  height: 8px;
+}
+
+.searchButton {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.searchIcon {
+  border: none;
+  outline: none;
+}
