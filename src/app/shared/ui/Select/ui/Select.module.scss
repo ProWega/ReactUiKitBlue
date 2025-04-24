@@ -1,8 +1,9 @@
 .selectContainer {
   position: relative;
-  width: 100%;
+  width: 210px;
   font-family: sans-serif;
   font-size: 14px;
+  z-index: 0;
 }
 
 
@@ -17,11 +18,7 @@
   border-radius: 4px;
   background: var(--colorLightText);
   cursor: pointer;
-
-  &:focus-within {
-    border-color: var(--colorButton);
-    box-shadow: 0 0 0 2px var(--colorButton);
-  }
+  z-index: 0;
 }
 
 
@@ -73,6 +70,7 @@
   color: var(--colorDivaider);
   margin-left: 4px;
   padding: 0;
+  z-index: 1;
 
 
   &:hover {

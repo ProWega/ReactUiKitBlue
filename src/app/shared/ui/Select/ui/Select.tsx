@@ -46,8 +46,8 @@ export const Select: React.FC<SelectProps> = ({
         containerRef,
         isOpen,
         toggle,
-        inputValue,
-        setInputValue,
+        // inputValue,
+        // setInputValue,
         options,
         selected,
         selectOption,
@@ -123,7 +123,7 @@ export const Select: React.FC<SelectProps> = ({
                                 clear();
                             }}
                         >
-                            <Icon name={"close"} width={16} height={16}/>
+                            <Icon name={"close"} width={14} height={14}/>
                         </button>
                     )}
 
@@ -142,14 +142,14 @@ export const Select: React.FC<SelectProps> = ({
 
             {isOpen && (
                 <div className={cls.selectDropdown}>
-                    {filterable && (
-                        <input
-                            className={cls.selectInput}
-                            value={inputValue}
-                            onChange={(e) => setInputValue(e.target.value)}
-                            autoFocus
-                        />
-                    )}
+                    {/*{filterable && (*/}
+                    {/*    <input*/}
+                    {/*        className={cls.selectInput}*/}
+                    {/*        value={inputValue}*/}
+                    {/*        onChange={(e) => setInputValue(e.target.value)}*/}
+                    {/*        autoFocus*/}
+                    {/*    />*/}
+                    {/*)}*/}
                     {loading ? (
                         <div className={cls.selectLoading}>{loadingText}</div>
                     ) : options.length === 0 ? (

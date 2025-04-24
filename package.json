@@ -13,8 +13,10 @@
   },
   "dependencies": {
     "@storybook/react": "^8.6.12",
+    "chart.js": "^4.4.9",
     "clsx": "^2.1.1",
     "react": "^19.0.0",
+    "react-chartjs-2": "^5.3.0",
     "react-dom": "^19.0.0",
     "vite-plugin-svgr": "^4.3.0",
     "vite-tsconfig-paths": "^5.1.4"
