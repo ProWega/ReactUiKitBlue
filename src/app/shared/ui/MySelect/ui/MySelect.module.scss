@@ -1,0 +1,89 @@
+.select {
+  max-width: 210px;
+  .label {
+    color: var(--colorText);
+  }
+  .selectBox {
+    display: flex;
+    justify-content: space-between;
+    padding: 12px;
+    border: 2px solid var(--colorDivaider);
+    border-radius: 4px;
+    box-shadow: 0 5px 14px 0 #0000000D;
+
+    .value {
+
+    }
+
+    .arrow {
+
+    }
+  }
+
+  .dropdownWrap {
+    margin-top: 20px;
+    display: flex;
+    background: var(--popOver);
+    .items{
+      width: 100%;
+      .item{
+        position: relative;
+        border-radius: 4px;
+        padding: 8px;
+
+        .ok {
+          position: absolute;
+          color: transparent;
+          justify-self: flex-end;
+          right: 12px;
+        }
+
+        &.selected {
+          .ok {
+          }
+        }
+
+        &:hover {
+          background: var(--colorButtonSecPressed);
+          .ok {
+            color: var(--colorButtonSec);
+          }
+        }
+
+      }
+    }
+
+    .scroll {
+      .scrollStick {
+
+      }
+    }
+  }
+  .selectEmpty {
+
+  }
+  &.disabled {
+
+  }
+
+  &.status {
+    max-width: 162px;
+    .selectBox {
+      border: none;
+      background: var(--colorBgContainer);
+
+    }
+    .dropdownWrap {
+      .items {
+        .item {
+          font-size: 14px;
+          padding-left: 16px;
+        }
+      }
+    }
+    .item {
+      font-size: 140px;
+    }
+
+  }
+}

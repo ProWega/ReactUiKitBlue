@@ -1,0 +1,37 @@
+.statusTag {
+  display: inline;
+  border-radius: 4px;
+  line-height: 22px;
+
+  &.small {
+    padding: 6px 4px;
+  }
+
+  &.medium {
+    padding: 8px 8px;
+  }
+
+  &.large {
+    font-size: 14px;
+    padding: 10px 10px;
+    border-radius: 6px;
+  }
+
+  &.active {
+    background: var(--colorShildGreen);
+    color: var(--colorLightText);
+  }
+
+  &.moderation {
+    background: var(--colorInfoActive);
+    color: var(--colorLightText);
+
+  }
+
+  &.blocked {
+    background: var(--colorShildRed);
+    color: var(--colorLightText);
+  }
+
+}
+

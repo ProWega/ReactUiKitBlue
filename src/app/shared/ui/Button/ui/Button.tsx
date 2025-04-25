@@ -19,7 +19,8 @@ export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 
-export const Button: FC<ButtonProps> = ({
+export const Button: FC<ButtonProps> = (
+    {
                                             variant = 'primary',
                                             size = 'medium',
                                             active = false,
