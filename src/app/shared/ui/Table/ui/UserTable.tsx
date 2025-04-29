@@ -1,12 +1,8 @@
 // ui/UserTable.tsx
-import React, { useMemo, useState, useEffect } from 'react'
-import { SearchBox } from '@/app/shared/ui/SearchBox'
-import {
-    MySelect,
-    Option as SelectOption,
-    Value,
-} from '@/app/shared/ui/MySelect/ui/MySelect'
-import { StatusTag, StatusVariant } from '@/app/shared/ui/StatusTag/ui/StatusTag'
+import React, {useEffect, useMemo, useState} from 'react'
+import {SearchBox} from '@/app/shared/ui/SearchBox'
+import {MySelect, Option as SelectOption, Value,} from '@/app/shared/ui/MySelect/ui/MySelect'
+import {StatusTag, StatusVariant} from '@/app/shared/ui/StatusTag/ui/StatusTag'
 import styles from './UserTable.module.scss'
 
 
@@ -66,17 +62,17 @@ export const UserTable: React.FC<UserTableProps> = ({
     // опции для селекта (и глобального фильтра, и row-level)
     const statusOptions: SelectOption[] = [
         {
-            node: <StatusTag variant="active" />,
+            node: <StatusTag variant="active"/>,
             value: variantToLabel['active'],
             disabled: false,
         },
         {
-            node: <StatusTag variant="moderation" />,
+            node: <StatusTag variant="moderation"/>,
             value: variantToLabel['moderation'],
             disabled: false,
         },
         {
-            node: <StatusTag variant="blocked" />,
+            node: <StatusTag variant="blocked"/>,
             value: variantToLabel['blocked'],
             disabled: false,
         },
@@ -98,7 +94,7 @@ export const UserTable: React.FC<UserTableProps> = ({
 
             return matchesName && matchesStatus
         })
-    }, [data, searchText, statusFilter])
+    }, [data, searchText, statusFilter, rowStatuses])
 
 
     // 2) Пагинация
@@ -116,7 +112,7 @@ export const UserTable: React.FC<UserTableProps> = ({
 
     // обновление статуса конкретной строки
     const handleRowStatusChange = (id: number, newLabel: Value) => {
-        setRowStatuses(prev => ({ ...prev, [id]: newLabel }))
+        setRowStatuses(prev => ({...prev, [id]: newLabel}))
     }
 
 
@@ -130,13 +126,13 @@ export const UserTable: React.FC<UserTableProps> = ({
                     placeholder="Поиск по ФИО"
                 />
                 <MySelect
-                    variant="default"
+                    variant="status"
+                    className={styles.statusFilter}
                     options={[
-                        { node: 'Все статусы', value: undefined, disabled: false },
                         ...statusOptions,
                     ]}
                     value={statusFilter}
-                    defaultValue={undefined}
+                    defaultValue={"Активный"}
                     onChange={setStatusFilter}
                     noOptionsText="Нет статусов"
                 />
@@ -177,7 +173,7 @@ export const UserTable: React.FC<UserTableProps> = ({
                 ))}
                 {pageData.length === 0 && (
                     <tr>
-                        <td colSpan={6} style={{ textAlign: 'center', padding: '1rem' }}>
+                        <td colSpan={6} style={{textAlign: 'center', padding: '1rem'}}>
                             Нет данных
                         </td>
                     </tr>
@@ -195,7 +191,7 @@ export const UserTable: React.FC<UserTableProps> = ({
                 >
                     Prev
                 </button>
-                {Array.from({ length: totalPages }, (_, i) => (
+                {Array.from({length: totalPages}, (_, i) => (
                     <button
                         key={i + 1}
                         className={`${styles.userTable__pageButton} ${

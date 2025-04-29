@@ -1,9 +1,14 @@
 .select {
+  position: relative;
   max-width: 210px;
+  cursor: pointer;
+
   .label {
     color: var(--colorText);
   }
+
   .selectBox {
+    min-width: 140px;
     display: flex;
     justify-content: space-between;
     padding: 12px;
@@ -21,21 +26,29 @@
   }
 
   .dropdownWrap {
-    margin-top: 20px;
+    position: absolute;
+    width: 100%;
+    margin-top: 12px;
     display: flex;
     background: var(--popOver);
-    .items{
+    z-index: 100;
+
+    .items {
       width: 100%;
-      .item{
+
+      .item {
         position: relative;
+        display: flex;
         border-radius: 4px;
         padding: 8px;
+        justify-content: space-between;
+        cursor: pointer;
 
         .ok {
-          position: absolute;
+          //position: absolute;
           color: transparent;
           justify-self: flex-end;
-          right: 12px;
+          margin-right: 0px;
         }
 
         &.selected {
@@ -45,6 +58,7 @@
 
         &:hover {
           background: var(--colorButtonSecPressed);
+
           .ok {
             color: var(--colorButtonSec);
           }
@@ -59,20 +73,24 @@
       }
     }
   }
+
   .selectEmpty {
 
   }
+
   &.disabled {
 
   }
 
   &.status {
     max-width: 162px;
+
     .selectBox {
       border: none;
       background: var(--colorBgContainer);
 
     }
+
     .dropdownWrap {
       .items {
         .item {
@@ -81,6 +99,7 @@
         }
       }
     }
+
     .item {
       font-size: 140px;
     }

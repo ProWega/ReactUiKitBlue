@@ -3,19 +3,20 @@
   flex-direction: column;
   width: 100%;
 
-
   &__filters {
     display: flex;
     gap: 1rem;
     margin-bottom: 1rem;
     align-items: center;
-  }
 
+    .statusFilter {
+      width: 160px;
+    }
+  }
 
   &__table {
     width: 100%;
     border-collapse: collapse;
-
 
     th,
     td {
@@ -41,7 +42,7 @@
   &__pagination {
     margin-top: 1rem;
     display: flex;
-    gap: 0.25rem;
+    gap: 8px;
     justify-content: center;
     flex-wrap: wrap;
   }
