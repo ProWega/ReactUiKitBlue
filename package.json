@@ -12,6 +12,7 @@
     "build-storybook": "storybook build"
   },
   "dependencies": {
+    "@floating-ui/react-dom-interactions": "^0.13.3",
     "@storybook/react": "^8.6.12",
     "chart.js": "^4.4.9",
     "clsx": "^2.1.1",

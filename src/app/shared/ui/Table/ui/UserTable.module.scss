@@ -1,0 +1,74 @@
+.userTable {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+
+
+  &__filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    align-items: center;
+  }
+
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+
+
+    th,
+    td {
+      padding: 0.5rem 0.75rem;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+
+    th {
+      text-align: left;
+      background: #f9f9f9;
+      font-weight: 600;
+    }
+  }
+
+
+  &__status {
+    text-align: center;
+    white-space: nowrap;
+  }
+
+
+  &__pagination {
+    margin-top: 1rem;
+    display: flex;
+    gap: 0.25rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+
+  &__pageButton {
+    padding: 0.25rem 0.5rem;
+    border: 1px solid #ccc;
+    background: #fff;
+    cursor: pointer;
+    font-size: 0.9rem;
+
+
+    &.--active {
+      background: #2684ff;
+      color: #fff;
+      border-color: #2684ff;
+    }
+
+
+    &:disabled {
+      opacity: 0.5;
+      cursor: default;
+    }
+  }
+}
+
+
+
+

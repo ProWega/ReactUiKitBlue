@@ -35,7 +35,6 @@ export const MySelect: FC<MySelectProps> = (
         value,
         defaultValue,
         disabled = false,
-        noOptionsText = "Нет опций...",
         className
     }
 
