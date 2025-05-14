@@ -45,10 +45,9 @@
         cursor: pointer;
 
         .ok {
-          //position: absolute;
           color: transparent;
           justify-self: flex-end;
-          margin-right: 0px;
+          margin-right: 0;
         }
 
         &.selected {

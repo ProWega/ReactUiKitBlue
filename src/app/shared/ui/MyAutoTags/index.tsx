@@ -1,0 +1,1 @@
+export {MyAutoTags} from "./ui/MyAutoTags"
